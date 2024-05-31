@@ -176,48 +176,76 @@ class _AddpubliState extends State<Addpubli> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                IconButton(
-                  iconSize: 30,
-                  color: Colors.white,
-                  icon: const Icon(Icons.camera_alt),
-                  onPressed: _takePicture,
-                  tooltip: 'Prendre une photo',
+                Center(
+                  child: CircleAvatar(
+                    radius: 20,
+                    backgroundColor: Colors.black12,
+                    child: IconButton(
+                      iconSize: 20,
+                      color: Colors.white,
+                      icon: const Icon(Icons.camera_alt),
+                      onPressed: _takePicture,
+                      tooltip: 'Prendre une photo',
+                    ),
+                  ),
                 ),
-                IconButton(
-                  iconSize: 30,
-                  color: Colors.white,
-                  icon: _isRecording
-                      ? const Icon(Icons.stop, color: Colors.red)
-                      : const Icon(Icons.videocam),
-                  onPressed: _recordVideo,
-                  tooltip: _isRecording
-                      ? 'Arrêter l\'enregistrement'
-                      : 'Enregistrer une vidéo',
+                CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.black12,
+                  child: IconButton(
+                    iconSize: 30,
+                    color: Colors.white,
+                    icon: _isRecording
+                        ? const Icon(Icons.stop, color: Colors.red)
+                        : const Icon(Icons.videocam),
+                    onPressed: _recordVideo,
+                    tooltip: _isRecording
+                        ? 'Arrêter l\'enregistrement'
+                        : 'Enregistrer une vidéo',
+                  ),
                 ),
-                IconButton(
-                  iconSize: 30,
-                  color: Colors.white,
-                  icon: const Icon(Icons.photo),
-                  onPressed: _pickImage,
-                  tooltip: 'Choisir une image',
+                CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.black12,
+                  child: Center(
+                    child: IconButton(
+                      iconSize: 20,
+                      color: Colors.white,
+                      icon: const Icon(Icons.photo),
+                      onPressed: _pickImage,
+                      tooltip: 'Choisir une image',
+                    ),
+                  ),
                 ),
-                IconButton(
-                  iconSize: 30,
-                  color: Colors.white,
-                  icon: const Icon(Icons.switch_camera),
-                  onPressed: _toggleCamera,
-                  tooltip: 'Changer de caméra',
+                CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.black12,
+                  child: Center(
+                    child: IconButton(
+                      iconSize: 20,
+                      color: Colors.white,
+                      icon: const Icon(Icons.switch_camera),
+                      onPressed: _toggleCamera,
+                      tooltip: 'Changer de caméra',
+                    ),
+                  ),
                 ),
+                CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.black12,
+                  child: Center(
+                    child: IconButton(
+                      iconSize: 20,
+                      color: Colors.white,
+                      icon: const Icon(Icons.send),
+                      onPressed: () {
+                        // Ajouter ici la logique pour envoyer les données dans la base de données
+                      },
+                      tooltip: 'Envoyer les données dans la base de données',
+                    ),
+                  ),
+                )
                 // Bouton d'envoi de données
-                IconButton(
-                  iconSize: 30,
-                  color: Colors.white,
-                  icon: const Icon(Icons.send),
-                  onPressed: () {
-                    // Ajouter ici la logique pour envoyer les données dans la base de données
-                  },
-                  tooltip: 'Envoyer les données dans la base de données',
-                ),
               ],
             ),
           ),
