@@ -9,7 +9,6 @@ void main() async {
   // Créez une instance de Messages pour charger les traductions
   final messages = Messages();
   await messages.loadTranslations();
-
   runApp(MyApp(messages: messages));
 }
 

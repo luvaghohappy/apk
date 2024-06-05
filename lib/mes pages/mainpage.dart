@@ -101,7 +101,7 @@ class _MymainpageState extends State<Mymainpage> {
                     ),
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(left: 30),
+                    padding: EdgeInsets.only(left: 40),
                   ),
                   IconButton(
                     onPressed: () {},
@@ -245,6 +245,46 @@ class _MymainpageState extends State<Mymainpage> {
                     ),
                   ],
                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 30),
+              child: Row(
+                children: [
+                  IconButton(
+                    iconSize: 18,
+                    color: Colors.black,
+                    onPressed: () {},
+                    icon: const Icon(Icons.favorite_border_outlined),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 40),
+                  ),
+                  IconButton(
+                    iconSize: 18,
+                    color: Colors.black,
+                    onPressed: () {},
+                    icon: const Icon(Icons.thumb_down_alt_outlined),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 40),
+                  ),
+                  IconButton(
+                    iconSize: 18,
+                    color: Colors.black,
+                    onPressed: () {},
+                    icon: const Icon(Icons.message_outlined),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 40),
+                  ),
+                  IconButton(
+                    iconSize: 18,
+                    color: Colors.black,
+                    onPressed: () {},
+                    icon: const Icon(Icons.share),
+                  ),
+                ],
               ),
             ),
             const Divider(
